@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_Scanner_QR"
+        android:icon="@drawable/ic_scanner_qr_ex"
+        android:title="Scanner QR"/>
+
+    <item
+        android:id="@+id/item_Registro"
+        android:icon="@drawable/ic_registro_ex"
+        android:title="Registro"/>
+
+    <item
+        android:id="@+id/item_Ayuda_Comentarios"
+        android:icon="@drawable/ic_ayuda_comentarios_ex"
+        android:title="Ayuda y Comentarios"/>
+
+</menu>
