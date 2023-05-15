@@ -11,13 +11,21 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondo_morado"
+        android:src="@drawable/fondo_github_oscuro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/stars2"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
 
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="150dp"
@@ -55,6 +63,7 @@
         android:layout_marginBottom="216dp"
         android:background="@drawable/btn_redondeado_grey"
         android:text="Iniciar Sesión"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +78,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="307dp"
-        android:background="@drawable/input"
+        android:background="@drawable/input_select"
         android:hint="Correo Ucol"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
@@ -87,8 +96,9 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/input"
+        android:background="@drawable/input_select"
         android:hint="Contraseña"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -120,6 +130,7 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/btn_redondeado_grey"
         android:text="Registrarse"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

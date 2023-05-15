@@ -16,4 +16,9 @@
         android:icon="@drawable/ic_ayuda_comentarios_ex"
         android:title="Ayuda y Comentarios"/>
 
+    <item
+        android:id="@+id/item_Cerrar_Sesion"
+        android:icon="@drawable/ic_cerrar_sesion_ex"
+        android:title="Cerrar Sesión"/>
+
 </menu>

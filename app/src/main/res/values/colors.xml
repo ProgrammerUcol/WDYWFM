@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="github_claro">#161b22</color>
+    <color name="github_oscuro">#0d1116</color>
+    <color name="verde_primary">#238636</color>
+    <color name="verde_animacion">#2ea043</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
