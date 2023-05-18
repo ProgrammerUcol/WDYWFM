@@ -33,7 +33,12 @@ class User_register : AppCompatActivity() {
 
         //-Registro de nuevo usuario-//
         registrarse.setOnClickListener {
-            createAccount(nuevoemail.text.toString(), nuevopassword.text.toString())
+            if(nuevoemail.text.toString() == "" || nuevopassword.text.toString() == "")
+            {
+                Toast.makeText(this, "¡Aún faltan campos por rellenar!", Toast.LENGTH_LONG).show()
+            }else{
+                createAccount(nuevoemail.text.toString(), nuevopassword.text.toString())
+            }
         }
     }
 
@@ -49,7 +54,7 @@ class User_register : AppCompatActivity() {
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "createUserWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext,"Error, verifica tu conexión a internet", Toast.LENGTH_LONG).show()
+                    Toast.makeText(baseContext,"Error, revisa la ayuda de cada campo o verifica tu conexion a internet", Toast.LENGTH_LONG).show()
                     updateUI(null)
                 }
             }

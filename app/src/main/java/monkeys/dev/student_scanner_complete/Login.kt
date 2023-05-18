@@ -37,7 +37,12 @@ class Login : AppCompatActivity() {
 
         //-Boton de iniciar sesion-//
         iniciar_sesion.setOnClickListener {
-            singIn(user.text.toString(), password.text.toString())
+            if(user.text.toString() == "" || password.text.toString() == "")
+            {
+                Toast.makeText(this, "¡Aún faltan campos por rellenar!", Toast.LENGTH_LONG).show()
+            }else{
+                singIn(user.text.toString(), password.text.toString())
+            }
         }
 
         //-Boton de registro de nuevos usuarios-//
