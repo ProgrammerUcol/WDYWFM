@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "548578918120",
+    "firebase_url": "https://studentscan-3629a-default-rtdb.firebaseio.com",
+    "project_id": "studentscan-3629a",
+    "storage_bucket": "studentscan-3629a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548578918120:android:c536ba54de215083ca935d",
+        "android_client_info": {
+          "package_name": "monkeys.dev.student_scanner_complete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548578918120-mcun0su70hhc2ur904s6mqhtaju757ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4fjcs7GZXe67xYrMeRnq8Dd2Hq7U745Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548578918120-mcun0su70hhc2ur904s6mqhtaju757ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
