@@ -1,6 +1,7 @@
 package monkeys.dev.student_scanner_complete
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -33,11 +34,17 @@ class User_register : AppCompatActivity() {
 
         //-Registro de nuevo usuario-//
         registrarse.setOnClickListener {
-            if(nuevoemail.text.toString() == "" || nuevopassword.text.toString() == "")
+            if(nuevoemail.text.toString() == "")
             {
                 Toast.makeText(this, "¡Aún faltan campos por rellenar!", Toast.LENGTH_LONG).show()
-            }else{
-                createAccount(nuevoemail.text.toString(), nuevopassword.text.toString())
+            }else
+            {
+                if(nuevopassword.text.toString() == ""){
+                    Toast.makeText(this, "¡Aún faltan campos por rellenar!", Toast.LENGTH_LONG).show()
+                }else
+                {
+                    createAccount(nuevoemail.text.toString(), nuevopassword.text.toString())
+                }
             }
         }
     }
@@ -51,6 +58,8 @@ class User_register : AppCompatActivity() {
                     Toast.makeText(baseContext,"Usuario creado exitosamente, ¡Inicia sesión!", Toast.LENGTH_LONG).show()
                     val user = firebaseAuth.currentUser
                     updateUI(user)
+                    val intento = Intent(this, Login::class.java)
+                    startActivity(intento)
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "createUserWithEmail:failure", task.exception)
