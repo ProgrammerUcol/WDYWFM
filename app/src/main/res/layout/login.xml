@@ -14,8 +14,10 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/stars2"
-        tools:layout_editor_absoluteX="-38dp"
-        tools:layout_editor_absoluteY="-38dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_planet"
